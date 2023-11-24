@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/head.html', {
+        'title': 'Главная'
+    })
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <div class="navbar">
+                    <a href="#" class="btn-resume">Резюме</a>
+                    <button class="open-burger-menu">
+                        <div class="line-one"></div>
+                        <div class="line-two"></div>
+                        <div class="line-three"></div>
+                    </button>
+                    <div class="main-navbar desktop-top-line">
+                        <ul>
+                            <li><a href="#sec-head" class="btn-nav">Введение</a></li>
+                            <li><a href="#sec-first" class="btn-nav">Обо мне</a></li>
+                            <li><a href="#sec-third" class="btn-nav">Отзывы</a></li>
+                            <li><a href="#sec-fifth" class="btn-nav">Контакты</a></li>
+                        </ul>
+                        <button class="btn-downloand">Скачать резюме</button>
+                    </div>
+                </div>
+                <div class="main-navbar mobile-top-line">
+                    <ul>
+                        <li><a href="#sec-head" class="btn-nav">Введение</a></li>
+                        <li><a href="#sec-first" class="btn-nav">Обо мне</a></li>
+                        <li><a href="#sec-third" class="btn-nav">Отзывы</a></li>
+                        <li><a href="#sec-fifth" class="btn-nav">Контакты</a></li>
+                    </ul>
+                    <button class="btn-downloand">Скачать резюме</button>
+                </div>
+            </nav>
+        </header>
+        <div class="main-section">
+            <section class="section head-inf" id="sec-head">
+                <div class="my-icons">
+                    <img src="@img/ben.jpg" alt="Моя аватарка" class="img">
+                </div>
+                <div class="btns-inf">
+                    <div class="my-short-inf">
+                        <img src="@img/hand.png" alt="Ладонь" class="img">
+                        <span>Антон, начинающий Frontent-developer</span>
+                    </div>
+                    <button class="btn-email">warlokmc@gmail.com</button>
+                </div>
+            </section>
+            <section class="section first-block" id="sec-first">
+                <div class="about-me">
+                    <div class="about-me-left-block">
+                        <h1>Это моё резюме</h1>
+                        <p>Опыта работы по специальности Frontend-developer не имею. В данный момент изучаю данную специальность (верстаю сайты, пишу JavaScript код). Когда получу необходимые навыки, начну изучать React.</p>
+                        <p>Я целеустремлённый, отвественный, трудолюбивый, быстро учусь. Цель: по окончании школы устроиться на первую работу и заниматься фронтендом.</p>
+                    </div>
+                    <div class="left-block-bottom">
+                        <table class="inf-about-me">
+                            <tbody>
+                                <tr>
+                                    <th>Полное имя</th>
+                                    <td>Антон Кяжкин</td>    
+                                </tr>
+                                <tr>
+                                    <th>Дата рождения:</th>
+                                    <td>11 декабря 2006</td>
+                                </tr>
+                                <tr>
+                                    <th>Вконтакте:</th>
+                                    <td>https://vk.com/id573096812</td>
+                                </tr>
+                                <tr>
+                                    <th>Email:</th>
+                                    <td>warlokmc@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="picture-about-me">
+                    <img src="@img/true-agency.jpg" alt="Я работаю" class="img">
+                </div>
+            </section>
+            <section class="second-block">
+                <div class="inf-one">
+                    <h1>Первый этап обучения</h1>
+                    <p>На этом этапе я изучил HTML и CSS. Я научился верстать простенькие сайты. Решил двигаться дальше.</p>
+                </div>
+                <div class="inf-two">
+                    <h1>Второй этап обучения</h1>
+                    <p>Сейчас я на этом этапе. Почти изучил JavaScript. Узнал синтаксис языка, его использование на практике. Написал 2 полноценных сайта с использованием JavaScript, написал Gulp сборку.</p>
+                </div>
+                <div class="inf-three">
+                    <h1>Третий этап обучения</h1>
+                    <p>До этого этапа мне ещё далековато, но всё же. Планирую изучить Webpack, Bootstrap, React. Буду много практиковаться: писать сайты, приложения. После этого этапа попытаюсь найти свою первую работу.</p>
+                </div>
+            </section>
+        </div>
+            <section class="section third-block" id="sec-third">
+                <h1>Что говорят Люди</h1>
+                <div class="slider-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="feedback-left">
+                                <img src="@img/testimonial-image01.jpg" alt="Арт-директор">
+                            </div>
+                            <div class="feedback-right">
+                                <span>Антона знаю с 1 класса. Он всегда был целеустремлённый, на него можно положиться. Никогда не откажет в помощи. За какую бы работу не взялся, всегда выполняет её качественно.</span>
+                                <div class="pers-inf">
+                                    <h2>Максим</h2>
+                                    <span>Друг детства</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feedback-left">
+                                <img src="@img/testimonial-image02.jpg" alt="Консультант по маркетингу">
+                            </div>
+                            <div class="feedback-right">
+                                <span>Приятный человек в общении, всегда выполняет поставленную задачу точно в срок. Он довольно интересный собеседник, приятная речь.</span>
+                                <div class="pers-inf">
+                                    <h2>Екатерина</h2>
+                                    <span>Первый работодатель</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feedback-left">
+                                <img src="@img/testimonial-image03.jpg" alt="Менеджер по продукту">
+                            </div>
+                            <div class="feedback-right">
+                                <span>Антон очень внимательный, быстро понимает материал урока. У него огромный потенциал, если развить его способности, из него получится отличный специалист.</span>
+                                <div class="pers-inf">
+                                    <h2>Александра</h2>
+                                    <span>Наставница</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feedback-left">
+                                <img src="@img/testimonial-image04.jpg" alt="Веб-разработчик">
+                            </div>
+                            <div class="feedback-right">
+                                <span>Антон - серьёзный молодой человек. У него есть цель, которую он пытается достичь. Каждый день пишет код, много практикуется. Я надеюсь, что Антон достигнет своей цели и станет отличным фронтенд-разработчиком.</span>
+                                <div class="pers-inf">
+                                    <h2>Александр</h2>
+                                    <span>Веб-разработчик</span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        <div class="main-section">
+            <section class="fourth-block">
+                <h1>Вопросы и ответы</h1>
+                <div class="accordeon">
+                <div class="title">
+                    Как вы относитесь к работе в сверхурочное время?        
+                    <div class="icon-accordeon"></div>
+                </div>
+                <div class="content">
+                    На регулярной основе я к этому не готов, но, если этого требуют обстоятельства, я могу оставаться после 18:00 или работать над задачами дополнительно дома.
+                </div>
+                <div class="title">
+                    Какие ваши карьерные цели?
+                    <div class="icon-accordeon"></div>
+                </div>
+                <div class="content">
+                    Хочу стать Senior Frontend-developer, получить большой опыт в сфере IT.
+                </div>
+                <div class="title">
+                    Как вы развиваете себя как специалиста?
+                    <div class="icon-accordeon"></div>
+                </div>
+                <div class="content">
+                    Ежедневно я смотрю обучащие видеоролики, пишу сайты, изучаю новые технологии.
+                </div>
+                <div class="title">
+                    Какое ваше хобби?
+                    <div class="icon-accordeon"></div>
+                </div>
+                <div class="content">
+                    Одно из главных - программирование. Ещё я катаюсь на велосипеде и бегаю по утрам.
+                </div>
+                </div>
+            </section>
+            <section class="section fifth-block" id="sec-fifth">
+                <div class="fifth-block-left">
+                    <form class="frm">
+                        <div class="frm-inf">
+                            <input type="text" name="name" id="your-name" class="frm-inf-inp" required>
+                            <label for="your-name" class="frm-inf-placeholder">Full Name</label>
+                        </div>
+                        <div class="error"></div>
+                        <div class="frm-inf">
+                            <input type="emal" name="email" id="your-email" class="frm-inf-inp" required
+                            data-reg="^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$">
+                            <label for="your-email" class="frm-inf-placeholder">Your Email</label>
+                        </div>
+                        <div class="error"></div>
+                        <div class="frm-inf">
+                            <textarea name="message" id="your-mess" cols="40" rows="10" class="frm-inf-inp" required></textarea>
+                            <label for="your-mess" class="frm-inf-placeholder">Ваше сообщение</label>
+                        </div>
+                        <div class="error"></div>
+                        <p><button type="submit" class="sub">Отправить</button></p>
+                    </form>
+                </div>
+                <div class="fifth-block-right">
+                    <div class="fifth-block-right-inf">
+                        <h1>Say hello</h1>
+                        <div class="small-inf">
+                            <span>010-020-0340</span>
+                            <span>warlokmc@gmail.com</span>
+                        </div>
+                        <div class="soc-net">
+                            <img src="@img/vk.png" alt="vk"><a href="https://vk.com/id573096812"></a>
+                            <img src="@img/youtube.png" alt="YouTube"><a href="https://www.youtube.com/"></a>
+                            <img src="@img/email.png" alt="E-mail"><a href="#"></a>
+                        </div>
+                        <div class="copyright">
+                            <span>Copyright © 2023 Anton Resume Page</span>
+                            <span>Design: Tooplate</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>    
+</body>
+</html>

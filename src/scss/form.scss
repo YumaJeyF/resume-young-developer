@@ -1,0 +1,118 @@
+.frm-inf-inp {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    font-size: 20px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.frm-inf-inp.error {
+    border-bottom: 1px solid red;
+}
+
+.frm-inf {
+    display: block;
+    margin: 26px 0;
+    position: relative;
+}
+
+.frm-inf-placeholder {
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: grey;
+    pointer-events: none;
+    transform-origin: left;
+    transition: all 0.3s;
+}
+
+.frm-inf-inp:focus + .frm-inf-placeholder,
+.frm-inf-inp:not(:focus):valid + .frm-inf-placeholder {
+    top: -20px;
+    color: #000;
+    transform: scale(0.9);
+}
+
+.error {
+    font-size: 18px;
+    color: red;
+}
+
+.sub {
+    margin-top: 26px;
+    font-size: 20px;
+    border: none;
+    background-color: #dfdf18;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.fifth-block {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.soc-net {
+    display: flex;
+    gap: 10px;
+}
+
+.soc-net img {
+    width: 30px;
+    height: 30px;
+}
+
+.fifth-block-right span {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fifth-block-right div {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fifth-block-right h1 {
+    font-size: 34px;
+}
+
+.fifth-block {
+    margin-top: 50px;
+}
+
+@media(max-width: 640px) {
+    .fifth-block {
+        display: block;
+    }
+    .fifth-block-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .frm p {
+        text-align: center;
+    }
+    .fifth-block-right h1 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 487px) {
+    .frm-inf-inp {
+        font-size: 17px;
+    }
+    .frm-inf-placeholder {
+        font-size: 17px;
+    }
+    .error {
+        font-size: 17px;
+    }
+    .fifth-block-right span {
+        font-size: 17px;
+    }
+}
